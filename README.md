@@ -33,3 +33,24 @@ employee-management/
 ├── manage.py
 ├── requirements.txt
 └── .env
+
+DevOps
+devops-lab/
+├── .github/
+│   └── workflows/
+│       └── ci-cd.yml          # GitHub Actions pipeline (Lint, Build, Test)
+├── docker/
+│   ├── Dockerfile             # Multi-stage Django container build
+│   └── docker-compose.yml     # Local orchestration (App + Database + Prometheus)
+├── terraform/
+│   ├── main.tf                # AWS provider, EC2 instance, Security Groups
+│   ├── variables.tf           # Environment variables
+│   └── outputs.tf             # Public IP & endpoint outputs
+├── app/
+│   ├── manage.py
+│   ├── config/                # Django settings & URL routing
+│   └── employee-management/   # Core app logic
+├── monitoring/
+│   └── prometheus.yml         # Metric scraping configuration
+├── README.md                  # Professional architecture documentation & setup guide
+└── requirements.txt
