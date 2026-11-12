@@ -1,23 +1,20 @@
-#python virtual environment
-venv/
-env/
+# Legacy codebase to exclude
+django-legacy-codebase/
 
-#Environmnet variables and secrets
+# Node & React dependencies
+node_modules/
+frontend/build/
+frontend/dist/
+
+# Environment variables & secrets
 .env
-.env.*
+*.env
 
+# Terraform state & cache
+.terraform/
+*.tfstate
+*.tfstate.*
 
-# Python cache
-__pycache__/
-*.pyc
-
-# Django database
-db.sqlite3
-
-# IDE files
-.vscode/
-.idea/
-
-# Operating system files
+# OS & Editor files
 .DS_Store
-
+.vscode/
